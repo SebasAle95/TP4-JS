@@ -19,6 +19,6 @@ let cuenta = {
     }
 }
 cuenta.informar();
-cuenta.ingresar(1000);
+cuenta.ingresar(2000);
 cuenta.extraer(800);
 cuenta.informar();
