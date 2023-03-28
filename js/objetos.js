@@ -59,21 +59,3 @@ let productos = [
   ];
 
 
-  function dibujarTabla(productos) {
-    console.log("Producto\tCategoria\tPrecio");
-    productos.forEach(producto => console.log(`${producto.nombreProducto}\t${producto.categoria}\t\t${producto.precio}`));
-  }
-  
-  // Mostrar la tabla completa
-  console.log("Tabla completa:");
-  dibujarTabla(listaProductos);
-  
-  // Filtrar el arreglo de productos por ‘Protectores solares' y mostrar la tabla filtrada
-  console.log("Tabla de protectores solares:");
-  const protectoresSolares = listaProductos.filter(producto => producto.categoria === "Protector solar");
-  dibujarTabla(protectoresSolares);
-  
-  // Buscar un producto serum y mostrarlo por pantalla
-  console.log("Producto serum:");
-  const serum = listaProductos.find(producto => producto.categoria === "Sérum");
-  console.log(serum ? `${serum.nombreProducto}\t${serum.categoria}\t\t${serum.precio}` : "No se encontró ningún producto serum");
